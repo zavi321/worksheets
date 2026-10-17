@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ur"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alphabet Worksheets · English A–Z · اردو ا–ے</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Urdu:wght@400;700&display=swap">
+<style>
+@page{size:A4 portrait;margin:8mm}
+*{box-sizing:border-box}
+body{margin:0;background:#f4f4f8;color:#1a1a2e;font-family:system-ui,'Noto Sans Urdu',sans-serif}
+.ui{padding:12px;max-width:760px;margin:0 auto}
+h1{font-size:17px;margin:4px 0 10px}
+.row{display:flex;gap:8px;margin:8px 0}
+.row>*{flex:1}
+button{font:inherit;font-weight:700;border-radius:9px;padding:10px 6px;border:1px solid #c9cbe0;background:#fff;color:#1a1a2e}
+button.main{background:#1a2a9c;color:#fff;border-color:#1a2a9c}
+.lt{font-size:19px;padding:7px 0}
+#grid,#groups{display:grid;gap:6px}
+#groups{grid-template-columns:repeat(3,1fr)}
+input{width:100%;font:inherit;padding:10px;border:1px solid #c9cbe0;border-radius:9px}
+.note{font-size:13px;opacity:.75;margin:6px 0}
+#prevwrap{max-width:760px;margin:10px auto;padding:0 12px;overflow:hidden;touch-action:pan-y}
+#pv{width:733px}
+.azws.az-prev+.azws.az-prev{margin-top:14px}
+@media screen{#sheets{display:none}}
+@media print{.ui,#prevwrap{display:none!important}html,body{background:#fff}#sheets{display:block}}
+
+.azws{background:#fff;color:#1a2a9c;font-family:"Comic Sans MS","Chalkboard SE","Segoe UI",sans-serif;font-size:15px;padding:12px;box-sizing:border-box;text-align:left;direction:ltr}
+.azws *{box-sizing:border-box}
+.azws{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+.azws.az-prev{width:733px;height:280mm;border:1px solid #c9cbe0}
+.azws.azpage{width:194mm;height:280mm;margin:0 auto;overflow:hidden;break-after:page;page-break-after:always}
+.azws.azpage:last-child{break-after:auto;page-break-after:auto}
+.az-hd{text-align:center;font-weight:700;font-size:17px;margin-bottom:4px}
+.az-nm{display:flex;justify-content:space-between;font-size:13px;border-bottom:1.5px solid #1a2a9c;padding-bottom:4px}
+.az-t{font-size:15px;font-weight:600;margin:9px 0 4px}
+.az-row{display:flex;border:1.5px solid #1a2a9c}
+.az-row>div{flex:1;border-right:1.5px solid #1a2a9c;aspect-ratio:1/.8}
+.az-row>div:last-child{border-right:0}
+.az-row svg{width:100%;height:100%;display:block}
+.az-two{display:flex;gap:10px;border-top:1.5px solid #1a2a9c;margin-top:8px}
+.az-two>div{flex:1;min-width:0;display:flex;flex-direction:column}
+.az-r{display:flex;align-items:center;border:1.5px solid #1a2a9c;border-top-width:0;height:50px}
+.az-r:first-child{border-top-width:1.5px}
+.az-e{width:60px;text-align:center;font-size:30px;border-right:1.5px solid #1a2a9c;line-height:48px}
+.az-o{flex:1;display:flex;justify-content:space-around;font-size:22px}
+.az-m{display:flex;align-items:center;justify-content:space-between;padding:6px 0}
+.az-big{border:2px solid #1a2a9c;border-radius:10px;font-size:68px;width:84px;height:84px;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif}
+.az-pics{display:flex;flex-direction:column;gap:4px}
+.az-pics div{font-size:32px;line-height:1.15}
+.az-pics div::before{content:"● ";font-size:13px;vertical-align:middle}
+.az-five{display:flex;border:1.5px solid #1a2a9c}
+.az-five>div{flex:1;text-align:center;border-right:1.5px solid #1a2a9c;padding:6px 2px}
+.az-five>div:last-child{border-right:0}
+.az-e5{font-size:38px;line-height:1.2}
+.az-w{font-size:18px;margin-top:4px}
+.az-bl{display:inline-block;width:1.4em;border-bottom:1.5px solid #1a2a9c}
+.az-six{display:flex;flex-wrap:wrap;border:1.5px solid #1a2a9c}
+.az-six>div{width:33.333%;text-align:center;font-size:42px;padding:6px 0;border:1px solid #1a2a9c}
+.az-g{display:inline-block;filter:grayscale(1) brightness(1.6) contrast(1.4)}
+.azws.az-prev,.azws.azpage{display:flex;flex-direction:column;padding:10px 12px;font-size:17px}
+.azws.az-rtl{direction:rtl;text-align:right;font-family:'Noto Sans Urdu','Noto Naskh Arabic','Noto Sans Arabic',Tahoma,sans-serif}
+.azws.az-prev .az-hd,.azws.azpage .az-hd,.azws.az-prev .az-nm,.azws.azpage .az-nm,.azws.az-prev .az-t,.azws.azpage .az-t{flex:none}
+.azws.az-prev .az-row,.azws.azpage .az-row,.azws.az-prev .az-two,.azws.azpage .az-two,.azws.az-prev .az-five,.azws.azpage .az-five,.azws.az-prev .az-six,.azws.azpage .az-six{overflow:hidden}
+.azws.az-rtl .az-t{line-height:1.6;font-size:17px;margin:10px 0 5px!important}
+.azws.az-rtl .az-hd,.azws.az-rtl .az-nm{line-height:1.6}
+.azws.az-rtl .az-w{line-height:1.4;font-size:20px;white-space:nowrap}
+.azws.az-rtl .az-o{line-height:1.2;align-items:center;font-size:28px}
+.azws.az-rtl .az-e{line-height:1}
+.azws.az-rtl .az-big{line-height:1;padding:0;font-size:68px;font-family:'Noto Sans Urdu','Noto Naskh Arabic','Noto Sans Arabic',Tahoma,sans-serif}
+.azws.az-rtl .az-bl{width:1.6em}
+.azws.az-prev+.azws.az-prev{margin-top:14px}
+.az2-forms{display:flex;border:1.5px solid #1a2a9c;flex:1.2;min-height:0;overflow:hidden}
+.az2-forms>div{flex:1;min-width:0;display:flex;flex-direction:column}
+.az2-forms>div+div{border-inline-start:1.5px solid #1a2a9c}
+.az2-forms svg{flex:1;min-height:0;width:100%;display:block}
+.az2-lb{text-align:center;font-size:14px;border-top:1px dashed #1a2a9c;line-height:1.7;padding:2px 0;flex:none}
+.az2-list{display:flex;flex-direction:column;flex:3;min-height:0;gap:6px;overflow:hidden}
+.az2-ln{display:flex;flex:1;min-height:0;gap:8px}
+.az2-src{width:32%;flex:none;border:1.5px solid #1a2a9c;display:flex;align-items:center;justify-content:center;gap:10px;font-size:32px;line-height:1.2;overflow:hidden;padding:0 6px}
+.az2-em{font-size:30px}
+.az2-brk{gap:8px}
+.az2-bx{flex:1;min-width:0;display:flex;gap:5px}
+.az2-bx>div{flex:1;min-width:0;border:1.5px solid #1a2a9c;border-radius:4px;background-image:repeating-linear-gradient(90deg,#1a2a9c 0 4px,transparent 4px 8px);background-size:100% 1px;background-repeat:no-repeat;background-position:0 66%}
+.azws.az-prev .az-t,.azws.azpage .az-t{font-size:18px;margin:12px 0 6px}
+.azws.az-prev .az-hd,.azws.azpage .az-hd{font-size:20px}
+.azws.az-prev .az-nm,.azws.azpage .az-nm{font-size:15px}
+.azws.az-prev .az-row,.azws.azpage .az-row{flex:1.15;min-height:0}
+.azws.az-prev .az-row>div,.azws.azpage .az-row>div{aspect-ratio:auto}
+.azws.az-prev .az-two,.azws.azpage .az-two{flex:1.9;min-height:0}
+.azws.az-prev .az-r,.azws.azpage .az-r{flex:1;height:auto}
+.azws.az-prev .az-e,.azws.azpage .az-e{font-size:40px;line-height:normal;width:70px;display:flex;align-items:center;justify-content:center;align-self:stretch}
+.azws.az-prev .az-o,.azws.azpage .az-o{font-size:26px}
+.azws.az-prev .az-m,.azws.azpage .az-m{flex:1;padding:6px 0}
+.azws.az-prev .az-big,.azws.azpage .az-big{font-size:84px;width:100px;height:100px}
+.azws.az-prev .az-pics,.azws.azpage .az-pics{gap:10px}
+.azws.az-prev .az-pics div,.azws.azpage .az-pics div{font-size:46px}
+.azws.az-prev .az-five,.azws.azpage .az-five{flex:1;min-height:0}
+.azws.az-prev .az-five>div,.azws.azpage .az-five>div{display:flex;flex-direction:column;justify-content:center;align-items:center}
+.azws.az-prev .az-e5,.azws.azpage .az-e5{font-size:56px}
+.azws.az-prev .az-w,.azws.azpage .az-w{font-size:22px;margin-top:8px}
+.azws.az-prev .az-six,.azws.azpage .az-six{flex:1.5;min-height:0}
+.azws.az-prev .az-six>div,.azws.azpage .az-six>div{height:50%;font-size:60px;display:flex;align-items:center;justify-content:center}
+
+.azws.azpage{height:277mm}
+.az-cl{text-align:center;font-weight:700;font-size:22px;line-height:1.5;flex:none}
+.azws.az-nur{font-size:18px}
+.nu-ban{display:flex;align-items:center;justify-content:center;gap:22px;border:2px solid #1a2a9c;border-radius:14px;flex:.9;min-height:0;overflow:hidden;margin-top:8px}
+.nu-ban .b{font-size:92px;line-height:1.1;font-weight:700}
+.nu-ban .s{font-size:24px}
+.nu-ban .e{font-size:78px;line-height:1.1}
+.nu-ban .w{font-size:38px}
+.azws.az-nur .az-row{flex:1.4;min-height:0}
+.nu-m{display:flex;align-items:center;gap:14px;flex:1.5;min-height:0;overflow:hidden}
+.azws.az-nur .az-big{width:120px;height:120px;font-size:90px;flex:none}
+.nu-pics{flex:1;display:flex;justify-content:space-around;align-items:center}
+.nu-pics div{text-align:center;font-size:56px;line-height:1.2}
+.nu-pics div::before{content:"●";display:block;font-size:16px}
+.azws.az-nur .az-six{flex:1.8;min-height:0}
+.azws.az-nur .az-six>div{height:50%;font-size:66px;display:flex;align-items:center;justify-content:center}
+.azws.az-nur .az-t{margin:6px 0 2px!important;flex:none}
+.azws.az-prev{height:277mm}
+</style></head><body>
+<div class="ui">
+<h1>🔤 Alphabet Worksheets — English A–Z / اردو ا–ے</h1>
+<input id="sch" placeholder="School name / سکول کا نام" aria-label="School name">
+<input id="cls" placeholder="جماعت کا نام (مثلاً نرسری / کے جی) — اوپر چھپے گا" aria-label="Class" style="margin-top:8px">
+<div class="row"><button id="bEn" onclick="setLang('en')">English A–Z</button><button id="bUr" onclick="setLang('ur')">اردو (کے جی)</button><button id="bNu" onclick="setLang('nur')">اردو نرسری</button></div>
+<div id="grid"></div>
+<div class="row"><button id="pr1" class="main" onclick="printOne()">🖨️ Print</button></div>
+<div id="st" class="note" style="min-height:1.6em;font-weight:700"></div>
+<div class="row"><button class="ghost" onclick="testPrint()">🧪 سادہ ٹیسٹ پرنٹ (صرف ایک سطر)</button></div>
+<div class="note">ایک ساتھ زیادہ حروف: 6 حروف کا گروپ چنیں (ایک وقت میں زیادہ صفحات پرنٹ نہ کریں)۔ PDF کے لیے پرنٹ ڈائیلاگ میں "Save as PDF" چنیں۔</div>
+<div id="groups"></div>
+<div class="row"><button id="prAll" class="main" onclick="printAll()">🖨️ All</button></div>
+</div>
+<div id="prevwrap"><div id="pv"></div></div>
+<div id="sheets"></div>
+<script>
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+var CURRENT_PROFILE = { school_name: '' };
+// ---------- A–Z English worksheet (Question Papers → 🔤 A–Z Worksheet) ----------
+let azMode = false, azLetter = 'A';
+const AZ_AL = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const AZ_RAW = {A:"🍎 apple,🐜 ant,🪓 axe,✈️ airplane",B:"🏀 ball,🐻 bear,🍌 banana,🦋 butterfly",C:"🐱 cat,🚗 car,🎂 cake,🐄 cow",D:"🐶 dog,🦆 duck,🥁 drum,🐬 dolphin",E:"🐘 elephant,🥚 egg,👁️ eye,🦅 eagle",F:"🐟 fish,🌸 flower,🐸 frog,🔥 fire",G:"🍇 grapes,🐐 goat,🎁 gift,🎸 guitar",H:"🏠 house,🐴 horse,🎩 hat,❤️ heart",I:"🧊 ice,🏝️ island,🦎 iguana,🐛 insect",J:"🫙 jar,🪼 jellyfish,🧃 juice,🚙 jeep",K:"🪁 kite,🔑 key,🦘 kangaroo,🤴 king",L:"🦁 lion,🍋 lemon,🍃 leaf,🪜 ladder",M:"🐒 monkey,🌙 moon,🥭 mango,🐭 mouse",N:"👃 nose,🪺 nest,📓 notebook,🥜 nut",O:"🍊 orange,🦉 owl,🐙 octopus,🐂 ox",P:"🦜 parrot,🍍 pineapple,🐧 penguin,🍕 pizza",Q:"👸 queen,🪶 quill,🐦 quail,❓ question",R:"🌈 rainbow,🐰 rabbit,🚀 rocket,🌹 rose",S:"☀️ sun,⭐ star,🐍 snake,🧦 sock",T:"🌳 tree,🐯 tiger,🐢 turtle,🍅 tomato",U:"☂️ umbrella,🦄 unicorn,⬆️ up,⚱️ urn",V:"🎻 violin,🚐 van,🌋 volcano,🏺 vase",W:"🍉 watermelon,🐋 whale,⌚ watch,🐺 wolf",X:"🎹 xylophone,🦊 fox,📦 box,🩻 xray",Y:"🪀 yoyo,🧶 yarn,🟡 yellow,🛥️ yacht",Z:"🦓 zebra,🤐 zip,0️⃣ zero,〰️ zigzag"};
+const AZ_D = {}; AZ_AL.forEach(k => { AZ_D[k] = AZ_RAW[k].split(',').map(s => s.split(' ')); });
+function azRng(s) { return () => (s = (s * 16807) % 2147483647) / 2147483647; }
+function azShuf(a, r) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function azCell(tx, low) {
+  return '<div><svg viewBox="0 0 100 80"><line x1="0" x2="100" y1="' + (low ? 46 : 48) + '" y2="' + (low ? 46 : 48) + '" stroke="#1a2a9c" stroke-dasharray="3 3" stroke-width=".8"/>' +
+    '<text x="50" y="' + (low ? 68 : 76) + '" text-anchor="middle" font-size="' + (low ? 84 : 80) + '" fill="none" stroke="#1a2a9c" stroke-width="1.6" stroke-dasharray="4 4" font-family="Arial,sans-serif">' + tx + '</text></svg></div>';
+}
+function azSheetHtml(L, cls) {
+  const r = azRng(L.charCodeAt(0) * 977 + 7), low = L.toLowerCase(), it = AZ_D[L];
+  const oth = azShuf(AZ_AL.filter(x => x !== L).flatMap(x => AZ_D[x]), r);
+  const lets = AZ_AL.filter(x => x !== L).map(x => x.toLowerCase());
+  const verb = L === 'X' ? 'that have' : 'that start with';
+  const sch = (typeof CURRENT_PROFILE !== 'undefined' && CURRENT_PROFILE && CURRENT_PROFILE.school_name) ? CURRENT_PROFILE.school_name : '';
+  let h = '<div class="azws ' + cls + '">' + azHdr();
+  h += '<div class="az-nm"><span>Name: ______________</span><span>Date: __________</span></div>';
+  h += '<div class="az-t">1. Trace the letter ' + L + '.</div><div class="az-row">' + azCell(L).repeat(5) + '</div>';
+  h += '<div class="az-t">2. Trace the letter ' + low + '.</div><div class="az-row">' + azCell(low, 1).repeat(5) + '</div>';
+  h += '<div class="az-two"><div><div class="az-t">3. Circle the correct letter.</div>';
+  it.forEach(p => { const o = azShuf([low, ...azShuf(lets, r).slice(0, 2)], r); h += '<div class="az-r"><div class="az-e">' + p[0] + '</div><div class="az-o">' + o.map(x => '<span>' + x + '</span>').join('') + '</div></div>'; });
+  h += '</div><div><div class="az-t">4. Match the letter ' + L + ' with the pictures.</div><div class="az-m"><div class="az-big">' + L + '</div><div class="az-pics">';
+  azShuf([it[0], it[1], oth[0], oth[1]], r).forEach(p => { h += '<div>' + p[0] + '</div>'; });
+  h += '</div></div></div></div><div class="az-t">5. Write the missing letter.</div><div class="az-five">';
+  it.forEach(p => { const w = p[1], i = w.indexOf(low); h += '<div><div class="az-e5">' + p[0] + '</div><div class="az-w">' + w.slice(0, i) + '<span class="az-bl"></span>' + w.slice(i + 1) + '</div></div>'; });
+  h += '</div><div class="az-t">6. Colour the pictures ' + verb + ' letter ' + L + '.</div><div class="az-six">';
+  azShuf([...it, oth[2], oth[3]], r).forEach(p => { h += '<div><span class="az-g">' + p[0] + '</span></div>'; });
+  return h + '</div></div>';
+}
+// ---------- Urdu alphabet worksheet (ا سے ے) ----------
+let azLang = 'en', urLetter = 'ا';
+const UR_AL = 'ا ب پ ت ٹ ث ج چ ح خ د ڈ ذ ر ڑ ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن و ہ ھ ی ے'.split(' ');
+const UR_RAW = {
+'ا':'🦉:اُلو,🍇:انگور,🐫:اونٹ,🥚:انڈا','ب':'🐐:بکری,🦆:بطخ,🐱:بلی,🐒:بندر','پ':'🪁:پتنگ,🌸:پھول,✏️:پنسل,🐦:پرندہ','ت':'🦋:تتلی,🍉:تربوز,👑:تاج,🔒:تالا',
+'ٹ':'🎩:ٹوپی,🍅:ٹماٹر,🚆:ٹرین,🚚:ٹرک','ث':'🍑:ثمر,💰:ثروت,🤲:ثواب,💡:ثریا','ج':'✈️:جہاز,👟:جوتا,🚙:جیپ,🌲:جنگل','چ':'🐤:چڑیا,🌙:چاند,🥄:چمچ,🔑:چابی',
+'ح':'🍮:حلوہ,🧮:حساب,🌿:حنا,🔤:حرف','خ':'🐰:خرگوش,⛺:خیمہ,✉️:خط,🍈:خربوزہ','د':'🌳:درخت,🚪:دروازہ,❤️:دل,🥛:دودھ','ڈ':'📦:ڈبہ,📮:ڈاکیا,🥁:ڈھول,👨‍⚕️:ڈاکٹر',
+'ذ':'👅:ذائقہ,📿:ذکر,🔬:ذرہ,🧠:ذہن','ر':'🫓:روٹی,🪢:رسی,🚂:ریل,🎨:رنگ','ڑ':'⛰️:پہاڑ,🪆:گڑیا,🐛:کیڑا,🐑:بھیڑ','ز':'🦓:زیبرا,🌍:زمین,🪜:زینہ,🦒:زرافہ',
+'ژ':'🌨️:ژالہ,📺:ٹیلیویژن,👁️:مژگاں,🏰:دژ','س':'🍎:سیب,☀️:سورج,🐍:سانپ,⭐:ستارہ','ش':'🦁:شیر,🍯:شہد,♟️:شطرنج,🕯️:شمع','ص':'🧼:صابن,🛋️:صوفہ,🧰:صندوق,🌅:صبح',
+'ض':'✖️:ضرب,🍽️:ضیافت,😠:ضدی,🗺️:ضلع','ط':'🦜:طوطا,🪘:طبلہ,🛩️:طیارہ,💪:طاقت','ظ':'🍲:ظرف,🕌:ظہر,😡:ظالم,🏆:ظفر','ع':'👓:عینک,🦅:عقاب,🚩:علم,🎉:عید',
+'غ':'🎈:غبارہ,🕳️:غار,🤿:غوطہ,🚿:غسل','ف':'🐘:فیل,⛲:فوارہ,⚽:فٹبال,📱:فون','ق':'🖊️:قلم,✂️:قینچی,🏰:قلعہ,👕:قمیص','ک':'🐶:کتا,📖:کتاب,🕊️:کبوتر,🍌:کیلا',
+'گ':'🐄:گائے,🐴:گھوڑا,⌚:گھڑی,🌹:گلاب','ل':'🎲:لڈو,🍋:لیمو,🪵:لکڑی,🏮:لالٹین','م':'🐟:مچھلی,🐔:مرغی,🦚:مور,🪰:مکھی','ن':'🍐:ناشپاتی,🚰:نل,🧂:نمک,👃:ناک',
+'و':'⚖️:وزن,📄:ورق,🚐:وین,🐋:وہیل','ہ':'✋:ہاتھ,🦌:ہرن,🔨:ہتھوڑا,🚜:ہل','ھ':'🐘:ہاتھی,🌴:کھجور,🐻:بھالو,🌸:پھول','ی':'🧊:یخ,💎:یاقوت,🧘:یوگا,🐃:یاک','ے':'🧸:کھلونے,🎈:غبارے,🍃:پتے,⭐:ستارے'
+};
+const UR_D = {}; UR_AL.forEach(k => { UR_D[k] = UR_RAW[k].split(',').map(s => s.split(':')); });
+const UR_FONT = "'Noto Sans Urdu','Noto Naskh Arabic','Noto Sans Arabic',Tahoma,sans-serif";
+function urCell(tx, big) {
+  const fs = big ? 66 : Math.max(16, Math.min(40, Math.floor(165 / tx.length)));
+  return '<div><svg viewBox="0 0 100 80"><line x1="0" x2="100" y1="52" y2="52" stroke="#1a2a9c" stroke-dasharray="3 3" stroke-width=".8"/>' +
+    '<text x="50" y="40" dominant-baseline="central" text-anchor="middle" font-size="' + fs + '" fill="#c9ceef" stroke="none" font-family="' + UR_FONT + '">' + tx + '</text></svg></div>';
+}
+function urSheetHtml(L, cls) {
+  const r = azRng(L.codePointAt(0) * 31 + 5), it = UR_D[L];
+  const oth = azShuf(UR_AL.filter(x => x !== L).flatMap(x => UR_D[x]), r).filter(p => !it.some(q => q[0] === p[0]));
+  const lets = UR_AL.filter(x => x !== L);
+  const mid = 'ڑژھے'.includes(L);
+  const sch = (typeof CURRENT_PROFILE !== 'undefined' && CURRENT_PROFILE && CURRENT_PROFILE.school_name) ? CURRENT_PROFILE.school_name : '';
+  let h = '<div class="azws az-rtl ' + cls + '" dir="rtl">' + azHdr();
+  h += '<div class="az-nm"><span>نام: ______________</span><span>تاریخ: __________</span></div>';
+  h += '<div class="az-t">1۔ ہلکے رنگ پر پھیر کر حرف «' + L + '» لکھیں۔</div><div class="az-row">' + urCell(L, 1).repeat(5) + '</div>';
+  h += '<div class="az-t">2۔ ہلکے رنگ پر پھیر کر الفاظ لکھیں۔</div><div class="az-row">' + it.map(p => urCell(p[1])).join('') + '</div>';
+  h += '<div class="az-two"><div><div class="az-t">3۔ صحیح حرف پر دائرہ لگائیں۔</div>';
+  it.forEach(p => { const o = azShuf([L, ...azShuf(lets, r).slice(0, 2)], r); h += '<div class="az-r"><div class="az-e">' + p[0] + '</div><div class="az-o">' + o.map(x => '<span>' + x + '</span>').join('') + '</div></div>'; });
+  h += '</div><div><div class="az-t">4۔ حرف «' + L + '» کو تصویروں سے ملائیں۔</div><div class="az-m"><div class="az-big">' + L + '</div><div class="az-pics">';
+  azShuf([it[0], it[1], oth[0], oth[1]], r).forEach(p => { h += '<div>' + p[0] + '</div>'; });
+  h += '</div></div></div></div><div class="az-t">5۔ خالی جگہ میں گم شدہ حرف لکھیں۔</div><div class="az-five">';
+  it.forEach(p => { const w = p[1], i = w.indexOf(L); h += '<div><div class="az-e5">' + p[0] + '</div><div class="az-w">' + w.slice(0, i) + '<span class="az-bl"></span>' + w.slice(i + 1) + '</div></div>'; });
+  h += '</div><div class="az-t">6۔ ان تصویروں کو رنگ کریں جن کے نام ' + (mid ? 'میں «' + L + '» آتا ہے۔' : '«' + L + '» سے شروع ہوتے ہیں۔') + '</div><div class="az-six">';
+  azShuf([...it, oth[2], oth[3]], r).forEach(p => { h += '<div><span class="az-g">' + p[0] + '</span></div>'; });
+  return h + '</div></div>';
+}
+// ---------- Urdu page 2: letter forms + joining / breaking words ----------
+function ur2Cell(tx, lab, blank) {
+  return '<div><svg viewBox="0 0 100 70"><line x1="0" x2="100" y1="46" y2="46" stroke="#1a2a9c" stroke-dasharray="3 3" stroke-width=".8"/>' +
+    (blank ? '' : '<text x="50" y="34" dominant-baseline="central" text-anchor="middle" font-size="58" fill="#c9ceef" stroke="none" font-family="' + UR_FONT + '">' + tx + '</text>') +
+    '</svg><div class="az2-lb">' + lab + '</div></div>';
+}
+function urSheet2Html(L, cls) {
+  const it = UR_D[L], J = '\u200D', nj = 'ادڈذرڑزژوے'.includes(L);
+  const forms = nj ? [[L, 'الگ شکل'], [J + L, 'آخر میں']] : [[L, 'الگ شکل'], [L + J, 'شروع میں'], [J + L + J, 'درمیان میں'], [J + L, 'آخر میں']];
+  const parts = w => [...w.replace(/[\u064B-\u065F\u0670\u06EA-\u06ED]/g, '')];
+  const sch = (typeof CURRENT_PROFILE !== 'undefined' && CURRENT_PROFILE && CURRENT_PROFILE.school_name) ? CURRENT_PROFILE.school_name : '';
+  let h = '<div class="azws az-rtl az-p2 ' + cls + '" dir="rtl">' + azHdr();
+  h += '<div class="az-nm"><span>نام: ______________</span><span>تاریخ: __________</span></div>';
+  h += '<div class="az-t">1۔ حرف «' + L + '» کی مختلف شکلیں ہلکے رنگ پر پھیر کر لکھیں۔</div><div class="az2-forms">' + forms.map(f => ur2Cell(f[0], f[1])).join('') + '</div>';
+  h += '<div class="az-t">2۔ حرف «' + L + '» کی شکلیں خود لکھیں۔</div><div class="az2-forms">' + forms.map(f => ur2Cell('', f[1], 1)).join('') + '</div>';
+  h += '<div class="az-t">3۔ جوڑ سے توڑ: لفظ کو توڑ کر حروف الگ الگ لکھیں۔</div><div class="az2-list">';
+  it.forEach(p => { h += '<div class="az2-ln"><div class="az2-src"><span class="az2-em">' + p[0] + '</span><span>' + p[1] + '</span></div><div class="az2-bx">' + parts(p[1]).map(() => '<div></div>').join('') + '</div></div>'; });
+  h += '</div><div class="az-t">4۔ توڑ سے جوڑ: الگ حروف کو جوڑ کر لفظ لکھیں۔</div><div class="az2-list">';
+  it.forEach(p => { const ps = parts(p[1]), fs = ps.length > 6 ? 20 : ps.length > 4 ? 26 : 32; h += '<div class="az2-ln"><div class="az2-src az2-brk" style="font-size:' + fs + 'px;">' + ps.map(c => '<span>' + c + '</span>').join('') + '</div><div class="az2-bx"><div></div></div></div>'; });
+  return h + '</div></div>';
+}
+
+
+function azHdr() {
+  var sc = CURRENT_PROFILE.school_name || '', c = CURRENT_PROFILE.cls || '', h = '';
+  if (sc) h += '<div class="az-hd" dir="auto">' + esc(sc) + '</div>';
+  if (c) h += '<div class="az-cl" dir="auto">' + esc(c) + '</div>';
+  return h;
+}
+// ---------- Urdu NURSERY: one easy page per letter ----------
+function urNurseryHtml(L, cls) {
+  var r = azRng(L.codePointAt(0) * 53 + 11), it = UR_D[L];
+  var oth = azShuf(UR_AL.filter(function(x){ return x !== L; }).flatMap(function(x){ return UR_D[x]; }), r).filter(function(p){ return !it.some(function(q){ return q[0] === p[0]; }); });
+  var mid = 'ڑژھے'.indexOf(L) >= 0;
+  var h = '<div class="azws az-rtl az-nur ' + cls + '" dir="rtl">' + azHdr();
+  h += '<div class="az-nm"><span>نام: ______________</span><span>تاریخ: __________</span></div>';
+  h += '<div class="nu-ban"><span class="b">' + L + '</span><span class="s">' + (mid ? 'والا لفظ' : 'سے') + '</span><span class="e">' + it[0][0] + '</span><span class="w">' + it[0][1] + '</span></div>';
+  h += '<div class="az-t">1۔ ہلکے رنگ پر پھیر کر حرف «' + L + '» لکھیں۔</div><div class="az-row">' + urCell(L, 1).repeat(4) + '</div>';
+  h += '<div class="az-t">2۔ حرف «' + L + '» خود لکھیں۔</div><div class="az-row">' + urCell('', 1).repeat(4) + '</div>';
+  h += '<div class="az-t">3۔ حرف «' + L + '» کو صحیح تصویروں سے ملائیں۔</div><div class="nu-m"><div class="az-big">' + L + '</div><div class="nu-pics">';
+  azShuf([it[0], it[1], oth[0], oth[1]], r).forEach(function(p){ h += '<div>' + p[0] + '</div>'; });
+  h += '</div></div><div class="az-t">4۔ ان تصویروں کو رنگ کریں جن کے نام ' + (mid ? 'میں «' + L + '» آتا ہے۔' : '«' + L + '» سے شروع ہوتے ہیں۔') + '</div><div class="az-six">';
+  azShuf([it[0], it[1], it[2], oth[2], oth[3], oth[4]], r).forEach(function(p){ h += '<div><span class="az-g">' + p[0] + '</span></div>'; });
+  return h + '</div></div>';
+}
+
+var cur = { en: 'A', ur: 'ا', nur: 'ا' }, lastW = 0, lastPrint = 0;
+function $(id){ return document.getElementById(id); }
+function letters(){ return azLang === 'en' ? AZ_AL : UR_AL; }
+function pages(L, cls){ return azLang === 'nur' ? urNurseryHtml(L, cls) : azLang === 'ur' ? urSheetHtml(L, cls) + urSheet2Html(L, cls) : azSheetHtml(L, cls); }
+function school(){
+  CURRENT_PROFILE.school_name = $('sch').value.trim();
+  CURRENT_PROFILE.cls = $('cls').value.trim();
+  try { localStorage.setItem('ws_school', CURRENT_PROFILE.school_name); localStorage.setItem('ws_cls', CURRENT_PROFILE.cls); } catch (e) {}
+}
+function setLang(l){ azLang = l; if (l === 'nur' && !$('cls').value.trim()) $('cls').value = 'نرسری'; render(); }
+function pick(L){ cur[azLang] = L; render(); }
+function fit(force){
+  var w = $('prevwrap'), p = $('pv'); if (!w || !p) return;
+  var cw = Math.round(w.clientWidth);
+  if (!cw || (!force && Math.abs(cw - lastW) < 8)) return;
+  lastW = cw;
+  var k = Math.min(1, cw / 733);
+  if (window.CSS && CSS.supports && CSS.supports('zoom', '1')) { p.style.zoom = String(k); }
+  else { p.style.transformOrigin = 'top left'; p.style.transform = 'scale(' + k + ')'; w.style.height = Math.ceil(p.offsetHeight * k) + 'px'; }
+}
+function render(){
+  school();
+  var ur = azLang !== 'en', list = letters(), c = cur[azLang];
+  $('bEn').className = azLang === 'en' ? 'main' : 'ghost'; $('bUr').className = azLang === 'ur' ? 'main' : 'ghost'; $('bNu').className = azLang === 'nur' ? 'main' : 'ghost';
+  var g = $('grid'); g.style.gridTemplateColumns = 'repeat(' + (ur ? 8 : 7) + ',1fr)'; g.style.direction = ur ? 'rtl' : 'ltr';
+  g.innerHTML = list.map(function(L){ return '<button class="' + (L === c ? 'main' : 'ghost') + ' lt" onclick="pick(\'' + L + '\')">' + L + '</button>'; }).join('');
+  $('pr1').textContent = '🖨️ ' + (ur ? 'پرنٹ: ' : 'Print: ') + c + (azLang === 'ur' ? ' (2 صفحے)' : azLang === 'nur' ? ' (1 صفحہ)' : ' (1 page)');
+  var gs = '';
+  for (var i = 0; i < list.length; i += 6) {
+    var part = list.slice(i, i + 6);
+    gs += '<button class="ghost" onclick="printGroup(' + i + ')">🖨️ ' + part[0] + ' – ' + part[part.length - 1] + '</button>';
+  }
+  $('prAll').textContent = ur ? '🖨️ سب ایک ساتھ پرنٹ (' + (list.length * (azLang === 'ur' ? 2 : 1)) + ' صفحات)' : '🖨️ Print all A–Z (' + list.length + ' pages)';
+  $('groups').innerHTML = gs; $('groups').style.direction = ur ? 'rtl' : 'ltr';
+  $('pv').innerHTML = pages(c, 'az-prev');
+  $('sheets').innerHTML = pages(c, 'azpage');   // so the browser menu's own Print also works
+  setTimeout(function(){ fit(true); }, 0);
+}
+function say(t){ $('st').textContent = t; }
+window.onerror = function(m, u, l){ say('خرابی: ' + m + ' (line ' + l + ')'); };
+function doPrint(ls){
+  say('بٹن دب گیا… صفحات بن رہے ہیں');
+  try {
+    school();
+    $('sheets').innerHTML = ls.map(function(L){ return pages(L, 'azpage'); }).join('');
+    say('صفحات تیار (' + ls.length + ' حرف)۔ پرنٹ ڈائیلاگ کھل رہا ہے…');
+    window.print();
+    say('پرنٹ کی کال ہو گئی۔ ڈائیلاگ نظر نہ آئے تو Chrome ⋮ → Share → Print آزمائیں۔');
+  } catch (e) { say('خرابی: ' + (e && e.message ? e.message : e)); }
+}
+function testPrint(){
+  say('ٹیسٹ پرنٹ…');
+  $('sheets').innerHTML = '<div style="font:26px sans-serif;padding:24px">Print test OK — پرنٹ ٹیسٹ</div>';
+  try { window.print(); say('ٹیسٹ کی کال ہو گئی۔'); } catch (e) { say('خرابی: ' + (e && e.message ? e.message : e)); }
+}
+function printAll(){ doPrint(letters().slice()); }
+function printOne(){ doPrint([cur[azLang]]); }
+function printGroup(i){ doPrint(letters().slice(i, i + 6)); }
+window.addEventListener('resize', function(){ fit(false); });
+try { var sc2 = localStorage.getItem('ws_cls'); if (sc2 !== null) $('cls').value = sc2; } catch (e) {}
+try { var sv = localStorage.getItem('ws_school'); $('sch').value = sv !== null ? sv : 'The Iqra Islamic Educational System Puran'; } catch (e) { $('sch').value = 'The Iqra Islamic Educational System Puran'; }
+try { if (window.__SCHOOL__) $('sch').value = window.__SCHOOL__; } catch (e) {}
+try { var qs = new URLSearchParams(location.search).get('school'); if (qs) $('sch').value = qs; } catch (e) {}
+$('sch').addEventListener('change', render); $('cls').addEventListener('change', render);
+render();
+</script>
+</body></html>

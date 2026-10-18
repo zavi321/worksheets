@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ur"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Alphabet Worksheets · English A–Z · اردو ا–ے</title>
+<title>Alphabet Worksheets · English · اردو</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Urdu:wght@400;700&display=swap">
 <style>
 @page{size:A4 portrait;margin:8mm}
@@ -119,17 +119,119 @@ input{width:100%;font:inherit;padding:10px;border:1px solid #c9cbe0;border-radiu
 .azws.az-nur .az-six>div{height:50%;font-size:66px;display:flex;align-items:center;justify-content:center}
 .azws.az-nur .az-t{margin:6px 0 2px!important;flex:none}
 .azws.az-prev{height:277mm}
+
+/* ===== v2 attractive theme ===== */
+.azws{-webkit-print-color-adjust:exact;print-color-adjust:exact;--ac:#1a2a9c;--bg:#eef0ff}
+.azws.azpage,.azws.az-prev{border:3px solid var(--ac);border-radius:16px;background:linear-gradient(var(--ac),var(--ac)) top/100% 7px no-repeat,#fff;padding-top:14px}
+.az-hd{color:var(--ac);font-size:23px!important;letter-spacing:.5px}
+.az-cl{align-self:center;background:var(--ac);color:#fff;border-radius:20px;padding:0 24px;font-size:18px!important;line-height:1.7;margin:2px 0 4px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.az-nm{border-bottom:2px dashed var(--ac)}
+.az-t{display:flex;align-items:center;gap:8px;color:#222a6b}
+.nb{flex:none;width:28px;height:28px;border-radius:50%;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;font-family:Arial,sans-serif;line-height:1;box-shadow:0 2px 0 rgba(0,0,0,.2)}
+.n1{background:#e53935}.n2{background:#fb8c00}.n3{background:#43a047}.n4{background:#1e88e5}.n5{background:#8e24aa}.n6{background:#d81b60}
+.az-row,.az-five,.az-six,.az2-forms{border:2px solid var(--ac);border-radius:12px}
+.az-row>div,.az-five>div,.az2-forms>div+div{border-color:var(--ac)}
+.az-six>div{border:1px solid var(--ac)}
+.az-six>div:nth-child(odd),.az-five>div:nth-child(odd){background:var(--bg)}
+.az-r{border-color:var(--ac);border-radius:0}
+.az-r:first-child{border-radius:10px 10px 0 0}.az-r:last-child{border-radius:0 0 10px 10px}
+.az-e{background:var(--bg);border-color:var(--ac)}
+.azws.az-rtl .az-e{border-right:0;border-left:1.5px solid var(--ac)}
+.az-two{border-top:0}
+.az-big{background:var(--bg);color:var(--ac);border-color:var(--ac);box-shadow:4px 4px 0 var(--ac)}
+.az-pics div::before{color:var(--ac)}
+.az-bl{border-bottom:2.5px solid var(--ac)}
+.nu-ban{background:linear-gradient(135deg,var(--bg),#fff 75%);border:3px solid var(--ac);border-radius:20px}
+.nu-ban .b{color:var(--ac);text-shadow:3px 3px 0 rgba(0,0,0,.1)}
+.nu-ban .s{color:#666}
+.az2-lb{background:var(--bg);color:var(--ac);font-weight:700}
+.az2-bx>div{border-color:var(--ac);background-image:repeating-linear-gradient(90deg,var(--ac) 0 4px,transparent 4px 8px)}
+.az2-src{border-color:var(--ac);background:var(--bg);border-radius:10px}
+.az-ft{flex:none;display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px;padding:3px 14px;border:2px dashed var(--ac);border-radius:14px;background:var(--bg);font-weight:700;font-size:15px;color:var(--ac);line-height:1.6}
+.az-st{font-size:24px;letter-spacing:3px;color:var(--ac);font-family:Arial,sans-serif;white-space:nowrap}
+.az-ft .sg{font-weight:400;color:#555;font-size:13px;white-space:nowrap}
+/* app UI */
+body{background:linear-gradient(180deg,#e8ecff,#fff 260px) fixed}
+.ui h1{background:linear-gradient(135deg,#1a2a9c,#7b2ff7);color:#fff;border-radius:14px;padding:14px 12px;text-align:center;font-size:18px;margin:6px 0 12px}
+.ui button{transition:transform .08s}.ui button:active{transform:scale(.96)}
+button.main{background:linear-gradient(135deg,#1a2a9c,#4a3fd6);box-shadow:0 3px 0 #101a6b}
+.lt{border-bottom-width:4px}
+#prAll{background:linear-gradient(135deg,#e53935,#fb8c00);border-color:#e53935;box-shadow:0 3px 0 #a52a1f}
+
+/* fit fix for KG pages */
+.azws:not(.az-nur).az-prev .az-row,.azws:not(.az-nur).azpage .az-row{flex:.85}
+.azws.az-prev .az-two,.azws.azpage .az-two{flex:2.7;margin-top:4px}
+.azws:not(.az-nur).az-prev .az-pics,.azws:not(.az-nur).azpage .az-pics{gap:3px}
+.azws:not(.az-nur).az-prev .az-pics div,.azws:not(.az-nur).azpage .az-pics div{font-size:34px;line-height:1.1}
+.azws:not(.az-nur).az-prev .az-big,.azws:not(.az-nur).azpage .az-big{width:84px;height:84px;font-size:68px}
+.azws:not(.az-nur) .az-t{margin:8px 0 4px!important}
+.az-ft{margin-top:6px;padding:1px 14px}
+
+/* day pill */
+.azws{position:relative}
+.az-dy{position:absolute;top:18px;right:18px;color:#fff;border-radius:14px;padding:0 12px;font-weight:700;font-size:15px;line-height:1.7;white-space:nowrap;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.azws.az-rtl .az-dy{right:auto;left:18px}
+.az-dy.d1{background:#43a047}.az-dy.d2{background:#fb8c00}.az-dy.d3{background:#8e24aa}
+
+/* v3 day bar + find grid */
+.az-dayb{flex:none;align-self:center;color:#fff;border-radius:16px;padding:0 22px;margin:3px 0 5px;font-weight:700;font-size:16px;line-height:1.7;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.az-dayb.d1{background:#43a047}.az-dayb.d2{background:#fb8c00}.az-dayb.d3{background:#8e24aa}
+.az-fd{display:flex;flex-wrap:wrap;border:2px solid var(--ac);border-radius:12px;flex:1.7;min-height:0;overflow:hidden}
+.az-fd>div{width:16.6667%;height:33.3333%;display:flex;align-items:center;justify-content:center;font-size:38px;border:1px solid var(--ac);color:#222a6b;font-family:Arial,sans-serif;line-height:1}
+.azws.az-rtl .az-fd>div{font-family:'Noto Sans Urdu','Noto Naskh Arabic','Noto Sans Arabic',Tahoma,sans-serif;font-size:38px}
+.azws.az-rtl:not(.az-nur) .az-five .az-e5{font-size:46px}
+.azws:not(.az-rtl) .az2-src{font-size:27px}
+
+/* maths */
+.mc-ban{display:flex;flex-wrap:wrap;justify-content:center;max-width:250px;font-size:38px;line-height:1.15}
+.mc-g{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2px;padding:4px;font-size:28px;line-height:1.1;overflow:hidden}
+.az-r>.mc-g{width:46%;flex:none;align-self:stretch;border-right:1.5px solid var(--ac);background:var(--bg)}
+.azws.az-rtl .az-r>.mc-g{border-right:0;border-left:1.5px solid var(--ac)}
+.mc-rows{display:flex;flex-direction:column;flex:2.2;min-height:0}
+.azws .mc-rows .az-o{font-size:38px}
+.mc-pics{flex:1;display:flex;justify-content:space-around;align-items:center;gap:6px}
+.mc-grp{flex:1;display:flex;flex-direction:column;align-items:center;font-size:26px;line-height:1.1}
+.mc-grp::before{content:"●";font-size:16px;margin-bottom:4px;color:var(--ac)}
+.mc-grp>div{display:flex;flex-wrap:wrap;justify-content:center;gap:2px;max-width:130px}
+.az-six.mc-ten>div{width:20%;height:50%;font-size:40px}
+.mc-ct{display:flex!important;flex-direction:column}
+.mc-ct .mc-g{flex:1;font-size:30px;min-height:0}
+.mc-ct svg{flex:1;min-height:0;width:100%;display:block}
+.az-five .mc-g{flex:1;max-width:100%;font-size:26px}
+.mc-wb{width:70%;height:42px;border:2px solid var(--ac);border-radius:8px;margin:6px 0;background:#fff;flex:none}
+.mc-sb{display:inline-block;width:62%;height:64px;border:2px solid var(--ac);border-radius:10px;background:#fff}
+.mc-draw{flex:1.2;min-height:0;border:2px dashed var(--ac);border-radius:14px;background:var(--bg)}
+.nu-ban.mcb{flex:.9}
+.nu-ban.mcb .b{font-size:58px;line-height:1}
+.nu-ban.mcb .mc-ban span{display:block}
+.nu-ban.mcb .w{font-size:32px}
+.nu-ban.mcb .mc-ban{font-size:30px;max-width:230px;line-height:1.1}
+.mc-rows .mc-g{font-size:22px}
+.mc-grp{font-size:22px}
+.mc-grp>div{max-width:150px}
+.az-six.mc-ten{align-content:flex-start}
+.az-six.mc-ten>div{font-size:30px;line-height:1;height:49.5%}
+.az-five .mc-g{font-size:20px;padding:2px}
+.mc-wb{height:36px;margin:4px 0}
+.azws.az-nur .az-six.mc-ten>div{font-size:34px;line-height:1;height:50%;width:20%}
+.azws.az-nur .az-six.mc-twenty>div{width:20%;height:25%;font-size:24px;line-height:1}
+.az-six.mc-twenty{align-content:flex-start}
+.az-six.mc-ten .az-g,.az-six.mc-twenty .az-g{filter:grayscale(1) brightness(1.05) contrast(1.15)}
+.azws.az-nur .az-six.mc-twenty>div{font-size:28px}
+.mc-nn{font-weight:400;font-family:Arial,sans-serif;color:var(--ac)}
+.az-six.mc-all{align-content:flex-start}
+.azws.az-nur .az-six.mc-all>div{display:flex;align-items:center;justify-content:center}
 </style></head><body>
 <div class="ui">
 <h1>🔤 Alphabet Worksheets — English A–Z / اردو ا–ے</h1>
 <input id="sch" placeholder="School name / سکول کا نام" aria-label="School name">
 <input id="cls" placeholder="جماعت کا نام (مثلاً نرسری / کے جی) — اوپر چھپے گا" aria-label="Class" style="margin-top:8px">
-<div class="row"><button id="bEn" onclick="setLang('en')">English A–Z</button><button id="bUr" onclick="setLang('ur')">اردو (کے جی)</button><button id="bNu" onclick="setLang('nur')">اردو نرسری</button></div>
+<div class="row" style="flex-wrap:wrap"><button id="bEnN" style="flex:1 1 45%" onclick="setLang('enn')">English Nursery</button><button id="bNu" style="flex:1 1 45%" onclick="setLang('nur')">اردو نرسری</button><button id="bEn" style="flex:1 1 45%" onclick="setLang('en')">English (KG)</button><button id="bUr" style="flex:1 1 45%" onclick="setLang('ur')">اردو (کے جی)</button><button id="bMt" style="flex:1 1 45%" onclick="setLang('mth')">🔢 Maths Nursery (1–20)</button><button id="bMk" style="flex:1 1 45%" onclick="setLang('mtk')">🔢 Maths KG (1–50)</button></div>
 <div id="grid"></div>
 <div class="row"><button id="pr1" class="main" onclick="printOne()">🖨️ Print</button></div>
 <div id="st" class="note" style="min-height:1.6em;font-weight:700"></div>
 <div class="row"><button class="ghost" onclick="testPrint()">🧪 سادہ ٹیسٹ پرنٹ (صرف ایک سطر)</button></div>
-<div class="note">ایک ساتھ زیادہ حروف: 6 حروف کا گروپ چنیں (ایک وقت میں زیادہ صفحات پرنٹ نہ کریں)۔ PDF کے لیے پرنٹ ڈائیلاگ میں "Save as PDF" چنیں۔</div>
+<div class="note">ہر حرف کے 3 صفحے (دن 1، دن 2، دن 3)۔ ایک ساتھ زیادہ حروف: 6 حروف کا گروپ = 18 صفحات۔ PDF کے لیے پرنٹ ڈائیلاگ میں "Save as PDF" چنیں۔</div>
 <div id="groups"></div>
 <div class="row"><button id="prAll" class="main" onclick="printAll()">🖨️ All</button></div>
 </div>
@@ -150,7 +252,7 @@ function azCell(tx, low) {
     '<text x="50" y="' + (low ? 68 : 76) + '" text-anchor="middle" font-size="' + (low ? 84 : 80) + '" fill="none" stroke="#1a2a9c" stroke-width="1.6" stroke-dasharray="4 4" font-family="Arial,sans-serif">' + tx + '</text></svg></div>';
 }
 function azSheetHtml(L, cls) {
-  const r = azRng(L.charCodeAt(0) * 977 + 7), low = L.toLowerCase(), it = AZ_D[L];
+  const r = azRng(L.charCodeAt(0) * 977 + 7 + DAY * 7919), low = L.toLowerCase(), it = dRot(AZ_D[L]);
   const oth = azShuf(AZ_AL.filter(x => x !== L).flatMap(x => AZ_D[x]), r);
   const lets = AZ_AL.filter(x => x !== L).map(x => x.toLowerCase());
   const verb = L === 'X' ? 'that have' : 'that start with';
@@ -167,7 +269,7 @@ function azSheetHtml(L, cls) {
   it.forEach(p => { const w = p[1], i = w.indexOf(low); h += '<div><div class="az-e5">' + p[0] + '</div><div class="az-w">' + w.slice(0, i) + '<span class="az-bl"></span>' + w.slice(i + 1) + '</div></div>'; });
   h += '</div><div class="az-t">6. Colour the pictures ' + verb + ' letter ' + L + '.</div><div class="az-six">';
   azShuf([...it, oth[2], oth[3]], r).forEach(p => { h += '<div><span class="az-g">' + p[0] + '</span></div>'; });
-  return h + '</div></div>';
+  return h + '</div>' + azFt(false) + '</div>';
 }
 // ---------- Urdu alphabet worksheet (ا سے ے) ----------
 let azLang = 'en', urLetter = 'ا';
@@ -191,7 +293,7 @@ function urCell(tx, big) {
     '<text x="50" y="40" dominant-baseline="central" text-anchor="middle" font-size="' + fs + '" fill="#c9ceef" stroke="none" font-family="' + UR_FONT + '">' + tx + '</text></svg></div>';
 }
 function urSheetHtml(L, cls) {
-  const r = azRng(L.codePointAt(0) * 31 + 5), it = UR_D[L];
+  const r = azRng(L.codePointAt(0) * 31 + 5 + DAY * 7919), it = dRot(UR_D[L]);
   const oth = azShuf(UR_AL.filter(x => x !== L).flatMap(x => UR_D[x]), r).filter(p => !it.some(q => q[0] === p[0]));
   const lets = UR_AL.filter(x => x !== L);
   const mid = 'ڑژھے'.includes(L);
@@ -208,7 +310,7 @@ function urSheetHtml(L, cls) {
   it.forEach(p => { const w = p[1], i = w.indexOf(L); h += '<div><div class="az-e5">' + p[0] + '</div><div class="az-w">' + w.slice(0, i) + '<span class="az-bl"></span>' + w.slice(i + 1) + '</div></div>'; });
   h += '</div><div class="az-t">6۔ ان تصویروں کو رنگ کریں جن کے نام ' + (mid ? 'میں «' + L + '» آتا ہے۔' : '«' + L + '» سے شروع ہوتے ہیں۔') + '</div><div class="az-six">';
   azShuf([...it, oth[2], oth[3]], r).forEach(p => { h += '<div><span class="az-g">' + p[0] + '</span></div>'; });
-  return h + '</div></div>';
+  return h + '</div>' + azFt(true) + '</div>';
 }
 // ---------- Urdu page 2: letter forms + joining / breaking words ----------
 function ur2Cell(tx, lab, blank) {
@@ -217,7 +319,7 @@ function ur2Cell(tx, lab, blank) {
     '</svg><div class="az2-lb">' + lab + '</div></div>';
 }
 function urSheet2Html(L, cls) {
-  const it = UR_D[L], J = '\u200D', nj = 'ادڈذرڑزژوے'.includes(L);
+  const it = dRot(UR_D[L]), J = '\u200D', nj = 'ادڈذرڑزژوے'.includes(L);
   const forms = nj ? [[L, 'الگ شکل'], [J + L, 'آخر میں']] : [[L, 'الگ شکل'], [L + J, 'شروع میں'], [J + L + J, 'درمیان میں'], [J + L, 'آخر میں']];
   const parts = w => [...w.replace(/[\u064B-\u065F\u0670\u06EA-\u06ED]/g, '')];
   const sch = (typeof CURRENT_PROFILE !== 'undefined' && CURRENT_PROFILE && CURRENT_PROFILE.school_name) ? CURRENT_PROFILE.school_name : '';
@@ -229,7 +331,7 @@ function urSheet2Html(L, cls) {
   it.forEach(p => { h += '<div class="az2-ln"><div class="az2-src"><span class="az2-em">' + p[0] + '</span><span>' + p[1] + '</span></div><div class="az2-bx">' + parts(p[1]).map(() => '<div></div>').join('') + '</div></div>'; });
   h += '</div><div class="az-t">4۔ توڑ سے جوڑ: الگ حروف کو جوڑ کر لفظ لکھیں۔</div><div class="az2-list">';
   it.forEach(p => { const ps = parts(p[1]), fs = ps.length > 6 ? 20 : ps.length > 4 ? 26 : 32; h += '<div class="az2-ln"><div class="az2-src az2-brk" style="font-size:' + fs + 'px;">' + ps.map(c => '<span>' + c + '</span>').join('') + '</div><div class="az2-bx"><div></div></div></div>'; });
-  return h + '</div></div>';
+  return h + '</div>' + azFt(true) + '</div>';
 }
 
 
@@ -237,11 +339,13 @@ function azHdr() {
   var sc = CURRENT_PROFILE.school_name || '', c = CURRENT_PROFILE.cls || '', h = '';
   if (sc) h += '<div class="az-hd" dir="auto">' + esc(sc) + '</div>';
   if (c) h += '<div class="az-cl" dir="auto">' + esc(c) + '</div>';
+  var rt = (azLang === 'ur' || azLang === 'nur' || azLang === 'mtu'), isM = (azLang === 'mth' || azLang === 'mtu');
+  h += '<div class="az-dayb d' + DAY + '">' + (rt ? 'دن ' : 'Day ') + DAY + ' · ' + (isM ? DAYM : DAYN)[rt ? 'ur' : 'en'][DAY - 1] + '</div>';
   return h;
 }
 // ---------- Urdu NURSERY: one easy page per letter ----------
 function urNurseryHtml(L, cls) {
-  var r = azRng(L.codePointAt(0) * 53 + 11), it = UR_D[L];
+  var r = azRng(L.codePointAt(0) * 53 + 11 + DAY * 7919), it = dRot(UR_D[L]);
   var oth = azShuf(UR_AL.filter(function(x){ return x !== L; }).flatMap(function(x){ return UR_D[x]; }), r).filter(function(p){ return !it.some(function(q){ return q[0] === p[0]; }); });
   var mid = 'ڑژھے'.indexOf(L) >= 0;
   var h = '<div class="azws az-rtl az-nur ' + cls + '" dir="rtl">' + azHdr();
@@ -253,19 +357,303 @@ function urNurseryHtml(L, cls) {
   azShuf([it[0], it[1], oth[0], oth[1]], r).forEach(function(p){ h += '<div>' + p[0] + '</div>'; });
   h += '</div></div><div class="az-t">4۔ ان تصویروں کو رنگ کریں جن کے نام ' + (mid ? 'میں «' + L + '» آتا ہے۔' : '«' + L + '» سے شروع ہوتے ہیں۔') + '</div><div class="az-six">';
   azShuf([it[0], it[1], it[2], oth[2], oth[3], oth[4]], r).forEach(function(p){ h += '<div><span class="az-g">' + p[0] + '</span></div>'; });
-  return h + '</div></div>';
+  return h + '</div>' + azFt(true) + '</div>';
 }
 
-var cur = { en: 'A', ur: 'ا', nur: 'ا' }, lastW = 0, lastPrint = 0;
+
+// ---------- English NURSERY: one easy page per letter ----------
+function azNurseryHtml(L, cls) {
+  var r = azRng(L.charCodeAt(0) * 59 + 3 + DAY * 7919), low = L.toLowerCase(), it = dRot(AZ_D[L]);
+  var oth = azShuf(AZ_AL.filter(function(x){ return x !== L; }).flatMap(function(x){ return AZ_D[x]; }), r).filter(function(p){ return !it.some(function(q){ return q[0] === p[0]; }); });
+  var verb = L === 'X' ? 'that have' : 'that start with';
+  var h = '<div class="azws az-nur ' + cls + '">' + azHdr();
+  h += '<div class="az-nm"><span>Name: ______________</span><span>Date: __________</span></div>';
+  h += '<div class="nu-ban"><span class="b">' + L + low + '</span><span class="s">for</span><span class="e">' + it[0][0] + '</span><span class="w">' + it[0][1] + '</span></div>';
+  h += '<div class="az-t">1. Trace the letter ' + L + '.</div><div class="az-row">' + azCell(L).repeat(4) + '</div>';
+  h += '<div class="az-t">2. Trace the letter ' + low + '.</div><div class="az-row">' + azCell(low, 1).repeat(4) + '</div>';
+  h += '<div class="az-t">3. Match the letter ' + L + ' with the pictures.</div><div class="nu-m"><div class="az-big">' + L + '</div><div class="nu-pics">';
+  azShuf([it[0], it[1], oth[0], oth[1]], r).forEach(function(p){ h += '<div>' + p[0] + '</div>'; });
+  h += '</div></div><div class="az-t">4. Colour the pictures ' + verb + ' letter ' + L + '.</div><div class="az-six">';
+  azShuf([it[0], it[1], it[2], oth[2], oth[3], oth[4]], r).forEach(function(p){ h += '<div><span class="az-g">' + p[0] + '</span></div>'; });
+  return h + '</div>' + azFt(false) + '</div>';
+}
+
+var PAL = [['#e53935','#ffebee'],['#fb8c00','#fff3e0'],['#43a047','#e8f5e9'],['#1e88e5','#e3f2fd'],['#8e24aa','#f3e5f5'],['#00897b','#e0f2f1'],['#d81b60','#fce4ec']];
+function azFt(rtl) {
+  return rtl
+    ? '<div class="az-ft"><span>شاباش! 🌟</span><span class="az-st">☆☆☆☆☆</span><span class="sg">استاد کے دستخط: ________</span></div>'
+    : '<div class="az-ft"><span>Great job! 🌟</span><span class="az-st">☆☆☆☆☆</span><span class="sg">Teacher: ________</span></div>';
+}
+function decorate(html, L) {
+  var i = Math.max(0, letters().indexOf(L)), c = PAL[i % PAL.length];
+  html = html.replace(/<div class="az-t">(\d)[.۔]\s*/g, function(m, n){ return '<div class="az-t"><span class="nb n' + n + '">' + n + '</span><span>'; });
+  html = html.replace(/(<span class="nb n\d">\d<\/span><span>)([\s\S]*?)<\/div>/g, '$1$2</span></div>');
+  return html.replace(/<div class="azws /g, '<div style="--ac:' + c[0] + ';--bg:' + c[1] + '" class="azws ');
+}
+var cur = { en: 'A', enn: 'A', ur: 'ا', nur: 'ا', mth: '1', mtu: '۱', mtk: '1–10' }, lastW = 0, lastPrint = 0;
 function $(id){ return document.getElementById(id); }
-function letters(){ return azLang === 'en' ? AZ_AL : UR_AL; }
-function pages(L, cls){ return azLang === 'nur' ? urNurseryHtml(L, cls) : azLang === 'ur' ? urSheetHtml(L, cls) + urSheet2Html(L, cls) : azSheetHtml(L, cls); }
+function letters(){ return azLang === 'mtk' ? KGM : azLang === 'mth' ? NUM_EN : azLang === 'mtu' ? NUM_UR : (azLang === 'en' || azLang === 'enn') ? AZ_AL : UR_AL; }
+var DAY = 1;
+function dRot(a){ var k = (DAY - 1) % a.length; return a.slice(k).concat(a.slice(0, k)); }
+function pagesRaw(L, cls, d){ return azLang === 'mtk' ? kgDay(L, d, cls) : azLang === 'mth' ? mathDay(L, d, false, cls) : azLang === 'enn' ? enDay(L, d, true, cls) : azLang === 'en' ? enDay(L, d, false, cls) : azLang === 'nur' ? urDay(L, d, true, cls) : urDay(L, d, false, cls); }
+// ===== v3: Day 1 recognise / Day 2 trace / Day 3 write on your own =====
+var DAYN = { en: ['Look & Find', 'Trace & Practise', 'Write by Yourself'], ur: ['پہچانیں', 'لکھائی کی مشق', 'خود لکھیں'] };
+var CONF = ['ب پ ت ٹ ث', 'ج چ ح خ', 'د ڈ ذ', 'ر ڑ ز ژ', 'س ش ص ض', 'ط ظ', 'ع غ', 'ف ق', 'ک گ', 'ہ ھ', 'ن و'];
+function T3(st, t){ st.n++; return '<div class="az-t">' + st.n + (st.rtl ? '۔ ' : '. ') + t + '</div>'; }
+function row3(cells, f){ return '<div class="az-row"' + (f ? ' style="flex:' + f + '"' : '') + '>' + cells + '</div>'; }
+function lst3(inner, f){ return '<div class="az2-list"' + (f ? ' style="flex:' + f + '"' : '') + '>' + inner + '</div>'; }
+function azLn(model){
+  return '<div><svg viewBox="0 0 100 80"><line x1="0" x2="100" y1="16" y2="16" stroke="#9aa3d9" stroke-width=".7"/><line x1="0" x2="100" y1="32" y2="32" stroke="#1a2a9c" stroke-dasharray="3 3" stroke-width=".8"/><line x1="0" x2="100" y1="72" y2="72" stroke="#1a2a9c" stroke-width="1.2"/>' +
+    (model ? '<text x="50" y="72" text-anchor="middle" font-size="78" fill="#1a2a9c" font-family="Arial,sans-serif">' + model + '</text>' : '') + '</svg></div>';
+}
+function urLn(model){
+  return '<div><svg viewBox="0 0 100 80"><line x1="0" x2="100" y1="56" y2="56" stroke="#1a2a9c" stroke-width="1.2"/>' +
+    (model ? '<text x="50" y="40" dominant-baseline="central" text-anchor="middle" font-size="66" fill="#1a2a9c" font-family="' + UR_FONT + '">' + model + '</text>' : '') + '</svg></div>';
+}
+function enPic(em, w, first){
+  var tx = first ? w.charAt(0) : w, fs = first ? 40 : Math.max(14, Math.min(34, Math.floor(92 / (tx.length * 0.58))));
+  return '<div><svg viewBox="0 0 100 80"><text x="50" y="30" text-anchor="middle" font-size="26">' + em + '</text><line x1="0" x2="100" y1="68" y2="68" stroke="#1a2a9c" stroke-dasharray="3 3" stroke-width=".8"/>' +
+    '<text x="50" y="68" text-anchor="middle" font-size="' + fs + '" fill="none" stroke="#1a2a9c" stroke-width="' + (first ? 1.2 : .7) + '" stroke-dasharray="3 3" font-family="Arial,sans-serif">' + tx + '</text></svg></div>';
+}
+function urPic(em, w){
+  var n = Array.from(w).length, fs = Math.max(16, Math.min(36, Math.floor(100 / (n * 0.5))));
+  return '<div><svg viewBox="0 0 100 80"><text x="50" y="28" text-anchor="middle" font-size="24">' + em + '</text><line x1="0" x2="100" y1="68" y2="68" stroke="#1a2a9c" stroke-dasharray="3 3" stroke-width=".8"/>' +
+    '<text x="50" y="54" dominant-baseline="central" text-anchor="middle" font-size="' + fs + '" fill="#c9ceef" stroke="none" font-family="' + UR_FONT + '">' + w + '</text></svg></div>';
+}
+function fdHtml(L, r){
+  var ur = (azLang === 'ur' || azLang === 'nur'), n = 18, k = 5, arr = [], i;
+  if (ur) {
+    var g = (CONF.filter(function(x){ return x.split(' ').indexOf(L) >= 0; })[0] || '').split(' ').filter(function(x){ return x && x !== L; });
+    var pool = azShuf(UR_AL.filter(function(x){ return x !== L && g.indexOf(x) < 0; }), r);
+    arr = g.concat(pool).slice(0, n - k);
+    for (i = 0; i < k; i++) arr.push(L);
+  } else {
+    var low = L.toLowerCase(), kg = azLang === 'en', pl = azShuf(AZ_AL.filter(function(x){ return x !== L; }), r);
+    for (i = 0; i < n - k; i++) { var c = pl[i % pl.length]; arr.push(kg && r() < .5 ? c.toLowerCase() : c); }
+    for (i = 0; i < k; i++) arr.push(kg && r() < .5 ? low : L);
+  }
+  return '<div class="az-fd">' + azShuf(arr, r).map(function(x){ return '<div>' + x + '</div>'; }).join('') + '</div>';
+}
+function wrap3(cls, rtl, nur, inner){
+  return '<div class="azws ' + (rtl ? 'az-rtl ' : '') + (nur ? 'az-nur ' : '') + cls + '"' + (rtl ? ' dir="rtl"' : '') + '>' + azHdr() +
+    (rtl ? '<div class="az-nm"><span>نام: ______________</span><span>تاریخ: __________</span></div>' : '<div class="az-nm"><span>Name: ______________</span><span>Date: __________</span></div>') +
+    inner + azFt(rtl) + '</div>';
+}
+function sixHtml(arr){ return '<div class="az-six">' + arr.map(function(p){ return '<div><span class="az-g">' + p[0] + '</span></div>'; }).join('') + '</div>'; }
+function readFive(it){ return '<div class="az-five">' + it.map(function(p){ return '<div><div class="az-e5">' + p[0] + '</div><div class="az-w">' + p[1] + '</div></div>'; }).join('') + '</div>'; }
+function missFive(it, ch){ return '<div class="az-five">' + it.map(function(p){ var w = p[1], i = w.indexOf(ch); return '<div><div class="az-e5">' + p[0] + '</div><div class="az-w">' + w.slice(0, i) + '<span class="az-bl"></span>' + w.slice(i + 1) + '</div></div>'; }).join('') + '</div>'; }
+function circRows(it, L, lets, r){ return it.map(function(p){ var o = azShuf([L, azShuf(lets, r)[0], azShuf(lets, r)[1]], r); return '<div class="az-r"><div class="az-e">' + p[0] + '</div><div class="az-o">' + o.map(function(x){ return '<span>' + x + '</span>'; }).join('') + '</div></div>'; }).join(''); }
+function matchBox(L, a, r){ return '<div class="az-m"><div class="az-big">' + L + '</div><div class="az-pics">' + azShuf(a, r).map(function(p){ return '<div>' + p[0] + '</div>'; }).join('') + '</div></div>'; }
+function matchNu(L, a, r){ return '<div class="nu-m"><div class="az-big">' + L + '</div><div class="nu-pics">' + azShuf(a, r).map(function(p){ return '<div>' + p[0] + '</div>'; }).join('') + '</div></div>'; }
+
+function enDay(L, d, nur, cls){
+  var r = azRng(L.charCodeAt(0) * 131 + d * 17 + (nur ? 5 : 0)), low = L.toLowerCase(), it = AZ_D[L], st = { n: 0, rtl: false };
+  var oth = azShuf(AZ_AL.filter(function(x){ return x !== L; }).flatMap(function(x){ return AZ_D[x]; }), r).filter(function(p){ return !it.some(function(q){ return q[0] === p[0]; }); });
+  var lets = AZ_AL.filter(function(x){ return x !== L; }).map(function(x){ return x.toLowerCase(); });
+  var verb = L === 'X' ? 'that have' : 'that start with', h = '';
+  var ban = '<div class="nu-ban"><span class="b">' + L + low + '</span><span class="s">for</span><span class="e">' + it[0][0] + '</span><span class="w">' + it[0][1] + '</span></div>';
+  var colourT = 'Colour the pictures ' + verb + ' letter ' + L + '.';
+  var six = sixHtml(azShuf(nur ? [it[0], it[1], it[2], oth[2], oth[3], oth[4]] : [it[0], it[1], it[2], it[3], oth[2], oth[3]], r));
+  if (d === 1) {
+    if (nur) h = ban + T3(st, 'Find and circle the letter ' + L + '.') + fdHtml(L, r) + T3(st, 'Match the letter ' + L + ' with the pictures.') + matchNu(L, [it[0], it[1], oth[0], oth[1]], r) + T3(st, colourT) + six;
+    else {
+      h = T3(st, 'Read the words aloud.') + readFive(it) + T3(st, 'Find and circle the letters ' + L + ' and ' + low + '.') + fdHtml(L, r);
+      var a = T3(st, 'Circle the correct letter.') + circRows(it, low, lets, r);
+      var b = T3(st, 'Match the letter ' + L + ' with the pictures.') + matchBox(L, [it[0], it[1], oth[0], oth[1]], r);
+      h += '<div class="az-two"><div>' + a + '</div><div>' + b + '</div></div>' + T3(st, colourT) + six;
+    }
+  } else if (d === 2) {
+    if (nur) h = ban + T3(st, 'Trace the letter ' + L + '.') + row3(azCell(L).repeat(4)) + T3(st, 'Trace the letter ' + low + '.') + row3(azCell(low, 1).repeat(4)) + T3(st, 'Trace the first letter of each picture.') + row3(it.map(function(p){ return enPic(p[0], p[1], 1); }).join(''));
+    else h = T3(st, 'Trace the letter ' + L + '.') + row3(azCell(L).repeat(5)) + T3(st, 'Trace the letter ' + low + '.') + row3(azCell(low, 1).repeat(5)) + T3(st, 'Trace the words.') + row3(it.map(function(p){ return enPic(p[0], p[1]); }).join(''), 1.1) + T3(st, 'Trace the letters, then write on your own.') + row3(azCell(L) + azCell(low, 1) + azCell(L) + azLn() + azLn() + azLn());
+  } else {
+    if (nur) h = ban + T3(st, 'Write the letter ' + L + '.') + row3(azLn(L) + azLn().repeat(3)) + T3(st, 'Write the letter ' + low + '.') + row3(azLn(low) + azLn().repeat(3)) + T3(st, 'Write the missing letter.') + missFive(it, low);
+    else {
+      var lines = it.map(function(p){ return '<div class="az2-ln"><div class="az2-src"><span class="az2-em">' + p[0] + '</span><span>' + p[1] + '</span></div><div class="az2-bx"><div></div></div></div>'; }).join('');
+      h = T3(st, 'Write the letter ' + L + '.') + row3(azLn(L) + azLn().repeat(4)) + T3(st, 'Write the letter ' + low + '.') + row3(azLn(low) + azLn().repeat(4)) + T3(st, 'Look and write the words.') + lst3(lines, 2.4) + T3(st, 'Write the missing letter.') + missFive(it, low);
+    }
+  }
+  return wrap3(cls, false, nur, h);
+}
+
+function urDay(L, d, nur, cls){
+  var r = azRng(L.codePointAt(0) * 131 + d * 17 + (nur ? 5 : 0)), it = UR_D[L], st = { n: 0, rtl: true };
+  var oth = azShuf(UR_AL.filter(function(x){ return x !== L; }).flatMap(function(x){ return UR_D[x]; }), r).filter(function(p){ return !it.some(function(q){ return q[0] === p[0]; }); });
+  var lets = UR_AL.filter(function(x){ return x !== L; });
+  var mid = 'ڑژھے'.indexOf(L) >= 0, J = '‍', nj = 'ادڈذرڑزژوے'.indexOf(L) >= 0, Q = '«' + L + '»', h = '';
+  var forms = nj ? [[L, 'الگ شکل'], [J + L, 'آخر میں']] : [[L, 'الگ شکل'], [L + J, 'شروع میں'], [J + L + J, 'درمیان میں'], [J + L, 'آخر میں']];
+  var parts = function(w){ return Array.from(w.replace(/[ً-ٰٟ۪-ۭ]/g, '')); };
+  var ban = '<div class="nu-ban"><span class="b">' + L + '</span><span class="s">' + (mid ? 'والا لفظ' : 'سے') + '</span><span class="e">' + it[0][0] + '</span><span class="w">' + it[0][1] + '</span></div>';
+  var colourT = 'ان تصویروں کو رنگ کریں جن کے نام ' + (mid ? 'میں ' + Q + ' آتا ہے۔' : Q + ' سے شروع ہوتے ہیں۔');
+  var six = sixHtml(azShuf(nur ? [it[0], it[1], it[2], oth[2], oth[3], oth[4]] : [it[0], it[1], it[2], it[3], oth[2], oth[3]], r));
+  var formsT = '<div class="az2-forms">' + forms.map(function(f){ return ur2Cell(f[0], f[1]); }).join('') + '</div>';
+  var formsB = '<div class="az2-forms">' + forms.map(function(f){ return ur2Cell('', f[1], 1); }).join('') + '</div>';
+  if (d === 1) {
+    if (nur) h = ban + T3(st, 'حرف ' + Q + ' کو تلاش کر کے دائرہ لگائیں۔') + fdHtml(L, r) + T3(st, 'حرف ' + Q + ' کو صحیح تصویروں سے ملائیں۔') + matchNu(L, [it[0], it[1], oth[0], oth[1]], r) + T3(st, colourT) + six;
+    else {
+      h = T3(st, 'الفاظ بلند آواز سے پڑھیں۔') + readFive(it) + T3(st, 'حرف ' + Q + ' کو تلاش کر کے دائرہ لگائیں۔') + fdHtml(L, r);
+      var a = T3(st, 'صحیح حرف پر دائرہ لگائیں۔') + circRows(it, L, lets, r);
+      var b = T3(st, 'حرف ' + Q + ' کو تصویروں سے ملائیں۔') + matchBox(L, [it[0], it[1], oth[0], oth[1]], r);
+      h += '<div class="az-two"><div>' + a + '</div><div>' + b + '</div></div>' + T3(st, colourT) + six;
+    }
+  } else if (d === 2) {
+    if (nur) h = ban + T3(st, 'ہلکے رنگ پر پھیر کر حرف ' + Q + ' لکھیں۔') + row3(urCell(L, 1).repeat(4)) + T3(st, 'ہلکے رنگ پر پھیر کر الفاظ لکھیں۔') + row3(it.slice(0, 3).map(function(p){ return urPic(p[0], p[1]); }).join('')) + T3(st, 'حرف ' + Q + ' کی شکلیں پھیر کر لکھیں۔') + formsT;
+    else h = T3(st, 'ہلکے رنگ پر پھیر کر حرف ' + Q + ' لکھیں۔') + row3(urCell(L, 1).repeat(5)) + T3(st, 'حرف ' + Q + ' کی مختلف شکلیں پھیر کر لکھیں۔') + formsT + T3(st, 'ہلکے رنگ پر پھیر کر الفاظ لکھیں۔') + row3(it.slice(0, 2).map(function(p){ return urPic(p[0], p[1]); }).join(''), 1.2) + T3(st, 'ہلکے رنگ پر پھیر کر الفاظ لکھیں۔') + row3(it.slice(2, 4).map(function(p){ return urPic(p[0], p[1]); }).join(''), 1.2);
+  } else {
+    var look = function(arr){ return arr.map(function(p){ return '<div class="az2-ln"><div class="az2-src"><span class="az2-em">' + p[0] + '</span><span>' + p[1] + '</span></div><div class="az2-bx"><div></div></div></div>'; }).join(''); };
+    if (nur) h = ban + T3(st, 'حرف ' + Q + ' لکھیں (پہلے خانے کو دیکھ کر)۔') + row3(urLn(L) + urLn().repeat(3)) + T3(st, 'حرف ' + Q + ' کی شکلیں خود لکھیں۔') + formsB + T3(st, 'تصویر دیکھ کر لفظ لکھیں۔') + lst3(look(it.slice(0, 3)), 2.2);
+    else {
+      var brk = it.map(function(p){ return '<div class="az2-ln"><div class="az2-src"><span class="az2-em">' + p[0] + '</span><span>' + p[1] + '</span></div><div class="az2-bx">' + parts(p[1]).map(function(){ return '<div></div>'; }).join('') + '</div></div>'; }).join('');
+      var join = it.map(function(p){ var ps = parts(p[1]), fs = ps.length > 6 ? 20 : ps.length > 4 ? 26 : 32; return '<div class="az2-ln"><div class="az2-src az2-brk" style="font-size:' + fs + 'px;">' + ps.map(function(c){ return '<span>' + c + '</span>'; }).join('') + '</div><div class="az2-bx"><div></div></div></div>'; }).join('');
+      h = T3(st, 'حرف ' + Q + ' لکھیں (پہلے خانے کو دیکھ کر)۔') + row3(urLn(L) + urLn().repeat(4)) + T3(st, 'حرف ' + Q + ' کی شکلیں خود لکھیں۔') + formsB + T3(st, 'جوڑ سے توڑ: لفظ کو توڑ کر حروف الگ الگ لکھیں۔') + lst3(brk) + T3(st, 'توڑ سے جوڑ: الگ حروف کو جوڑ کر لفظ لکھیں۔') + lst3(join);
+    }
+  }
+  return wrap3(cls, true, nur, h);
+}
+function pages(L, cls){ var h = ''; for (DAY = 1; DAY <= 3; DAY++) h += decorate(pagesRaw(L, cls, DAY), L); DAY = 1; return h; }
+// ===== Maths Nursery (numbers 1-10): Day 1 count & find / Day 2 trace / Day 3 write on your own =====
+var NUM_EN = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'], ALLN = [];
+for (var _i = 1; _i <= 20; _i++) ALLN.push(_i);
+var NUM_UR = ['۱','۲','۳','۴','۵','۶','۷','۸','۹','۱۰'];
+var W_EN = ['One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','Eighteen','Nineteen','Twenty'];
+var W_UR = ['ایک','دو','تین','چار','پانچ','چھ','سات','آٹھ','نو','دس'];
+var EMN = ['🍎','⭐','🎈','🐟','🌸','🚗','🐥','🍓','🧸','🍪','🍌','🐶','🦋','🍩','🌟','🚀','🐢','🍇','🎁','🍉'];
+var DAYM = { en: ['Count & Find', 'Trace & Practise', 'Write by Yourself'], ur: ['گنیں اور پہچانیں', 'لکھائی کی مشق', 'خود لکھیں'] };
+function objs(n, em){ var s = ''; for (var i = 0; i < n; i++) s += '<span>' + em + '</span>'; return s; }
+function nLn(model, ur){
+  return '<div><svg viewBox="0 0 100 80"><line x1="0" x2="100" y1="16" y2="16" stroke="#9aa3d9" stroke-width=".7"/><line x1="0" x2="100" y1="44" y2="44" stroke="#1a2a9c" stroke-dasharray="3 3" stroke-width=".8"/><line x1="0" x2="100" y1="72" y2="72" stroke="#1a2a9c" stroke-width="1.2"/>' +
+    (model ? '<text x="50" y="70" text-anchor="middle" font-size="' + (model.length > 1 ? 52 : 66) + '" fill="#1a2a9c" font-family="' + (ur ? UR_FONT : 'Arial,sans-serif') + '">' + model + '</text>' : '') + '</svg></div>';
+}
+function numSvg(tx, ur){
+  return ur
+    ? '<svg viewBox="0 0 100 80"><line x1="0" x2="100" y1="66" y2="66" stroke="#1a2a9c" stroke-dasharray="3 3" stroke-width=".8"/><text x="50" y="42" dominant-baseline="central" text-anchor="middle" font-size="' + (tx.length > 1 ? 44 : 58) + '" fill="#c9ceef" stroke="none" font-family="' + UR_FONT + '">' + tx + '</text></svg>'
+    : '<svg viewBox="0 0 100 80"><line x1="0" x2="100" y1="68" y2="68" stroke="#1a2a9c" stroke-dasharray="3 3" stroke-width=".8"/><text x="50" y="68" text-anchor="middle" font-size="' + (tx.length > 1 ? 52 : 66) + '" fill="none" stroke="#1a2a9c" stroke-width="1.4" stroke-dasharray="4 4" font-family="Arial,sans-serif">' + tx + '</text></svg>';
+}
+function numTr(tx, ur){ return '<div>' + numSvg(tx, ur) + '</div>'; }
+function enWord(w){
+  var fs = Math.max(14, Math.min(34, Math.floor(92 / (w.length * 0.58))));
+  return '<div><svg viewBox="0 0 100 80"><line x1="0" x2="100" y1="52" y2="52" stroke="#1a2a9c" stroke-dasharray="3 3" stroke-width=".8"/><text x="50" y="52" text-anchor="middle" font-size="' + fs + '" fill="none" stroke="#1a2a9c" stroke-width=".8" stroke-dasharray="3 3" font-family="Arial,sans-serif">' + w + '</text></svg></div>';
+}
+function wLn(w){
+  var fs = Math.max(14, Math.min(40, Math.floor(92 / (w.length * 0.58))));
+  return '<div><svg viewBox="0 0 100 80"><line x1="0" x2="100" y1="16" y2="16" stroke="#9aa3d9" stroke-width=".7"/><line x1="0" x2="100" y1="44" y2="44" stroke="#1a2a9c" stroke-dasharray="3 3" stroke-width=".8"/><line x1="0" x2="100" y1="72" y2="72" stroke="#1a2a9c" stroke-width="1.2"/><text x="50" y="70" text-anchor="middle" font-size="' + fs + '" fill="#1a2a9c" font-family="Arial,sans-serif">' + w + '</text></svg></div>';
+}
+function mathDay(L, d, ur, cls){
+  // every page works ONLY on the one number N (no other numbers anywhere)
+  var N = letters().indexOf(L) + 1, r = azRng(N * 211 + d * 17), st = { n: 0, rtl: false }, h = '';
+  var Q = String(N), Wd = W_EN[N - 1], em = EMN[N - 1];
+  var E3 = [EMN[N - 1], EMN[(N + 6) % 20], EMN[(N + 12) % 20]];
+  var szG = function(c, a, b, cc){ return c <= 5 ? a : c <= 10 ? b : cc; };
+  var ban = '<div class="nu-ban mcb"><span class="b">' + Q + '</span><span class="s">=</span><span class="mc-ban" style="font-size:' + szG(N, 36, 30, 21) + 'px;max-width:' + (N > 10 ? 320 : 230) + 'px">' + objs(N, em) + '</span><span class="w">' + Wd + '</span></div>';
+  if (d === 1) {
+    var rows = E3.map(function(e){ return '<div class="az-r"><div class="mc-g" style="font-size:' + szG(N, 26, 21, 15) + 'px">' + objs(N, e) + '</div><div class="az-o"><span>' + Q + '</span></div></div>'; }).join('');
+    var pics = azShuf(EMN.filter(function(x){ return x !== em; }), r), cells = [], i;
+    for (i = 0; i < 5; i++) cells.push('<b class="mc-nn">' + Q + '</b>');
+    for (i = 0; i < 13; i++) cells.push(pics[i % pics.length]);
+    var fd = '<div class="az-fd">' + azShuf(cells, r).map(function(x){ return '<div>' + x + '</div>'; }).join('') + '</div>';
+    var mt = '<div class="nu-m"><div class="az-big">' + Q + '</div><div class="mc-pics">' + E3.map(function(e){ return '<div class="mc-grp"><div style="font-size:' + szG(N, 26, 20, 14) + 'px;max-width:' + (N > 10 ? 170 : 130) + 'px">' + objs(N, e) + '</div></div>'; }).join('') + '</div></div>';
+    var cols = N <= 5 ? N : 5, rws = Math.ceil(N / cols), fsz = rws === 1 ? 64 : rws === 2 ? 44 : rws === 3 ? 36 : 28;
+    var all = '<div class="az-six mc-all">'; for (i = 0; i < N; i++) all += '<div style="width:' + (100 / cols) + '%;height:' + (100 / rws) + '%;font-size:' + fsz + 'px;line-height:1"><span class="az-g">' + em + '</span></div>'; all += '</div>';
+    h = ban + T3(st, 'Count the pictures and say the number ' + Q + '.') + '<div class="mc-rows">' + rows + '</div>' +
+      T3(st, 'Find and circle the number ' + Q + '.') + fd +
+      T3(st, 'Match the number ' + Q + ' with the pictures.') + mt +
+      T3(st, 'Colour all ' + Q + (N === 1 ? ' picture.' : ' pictures.')) + all;
+  } else if (d === 2) {
+    var ct = '';
+    for (var k = 0; k < 3; k++) ct += '<div class="mc-ct"><div class="mc-g" style="font-size:' + szG(N, 32, 26, 15) + 'px">' + objs(N, E3[k]) + '</div>' + numSvg(Q, false) + '</div>';
+    h = ban + T3(st, 'Trace the number ' + Q + '.') + row3(numTr(Q, false).repeat(4)) +
+      T3(st, 'Trace the word.') + row3(enWord(Wd).repeat(4)) +
+      T3(st, 'Count and trace the number.') + row3(ct) +
+      T3(st, 'Trace, then write it yourself.') + row3(numTr(Q, false).repeat(3) + nLn('', false).repeat(3));
+  } else {
+    var five = '<div class="az-five">' + [E3[0], E3[1], E3[2], EMN[(N + 3) % 20]].map(function(e){ return '<div><div class="mc-g" style="font-size:' + szG(N, 24, 18, 13) + 'px">' + objs(N, e) + '</div><div class="mc-wb"></div></div>'; }).join('') + '</div>';
+    h = ban + T3(st, 'Write the number ' + Q + '.') + row3(nLn(Q, false) + nLn('', false).repeat(4)) +
+      T3(st, 'Count the pictures and write the number.') + five +
+      T3(st, 'Draw ' + Q + (N === 1 ? ' circle.' : ' circles.')) + '<div class="mc-draw"></div>' +
+      T3(st, 'Write the word ' + Wd + '.') + row3(wLn(Wd) + nLn('', false).repeat(2));
+  }
+  return wrap3(cls, false, true, h);
+}
+
+// ===== Maths KG: counting 1-50, before/after/between, add, take away, number names =====
+var KGM = ['1–10','11–20','21–30','31–40','41–50','Before After','Between','Add 1–5','Add 6–10','Take away 1–5','Take away 6–10','Names 1–10','Names 11–20','Names 21–30','Names 31–40','Names 41–50'];
+var KGB = ['1–10','11–20','21–30','31–40','41–50','◀ ▶','◀ ? ▶','+','+','−','−','Abc','Abc','Abc','Abc','Abc'];
+function kTxt(t, fs, tr){ return '<div><svg viewBox="0 0 100 80"><line x1="0" x2="100" y1="62" y2="62" stroke="#1a2a9c" stroke-dasharray="3 3" stroke-width=".8"/><text x="50" y="58" text-anchor="middle" font-size="' + fs + '" ' + (tr ? 'fill="none" stroke="#1a2a9c" stroke-width="1" stroke-dasharray="3 3"' : 'fill="#1a2a9c"') + ' font-family="Arial,sans-serif">' + t + '</text></svg></div>'; }
+function kRow(a, fs, tr){ return row3(a.map(function(t){ return kTxt(t, fs, tr); }).join('')); }
+function kgDay(L, d, cls){
+  var k = KGM.indexOf(L), r = azRng(k * 131 + d * 17 + 3), st = { n: 0, rtl: false }, h = '', i, j;
+  var rnd = function(a, b){ return a + Math.floor(r() * (b - a + 1)); };
+  var ban = '<div class="nu-ban mcb"><span class="b" style="font-size:' + (KGB[k].length > 3 ? 40 : 58) + 'px">' + KGB[k] + '</span><span class="w">' + ((k < 5 || k > 6) ? L : '') + '</span></div>';
+  var trw = function(n){ return row3(numTr(String(n), false).repeat(3) + nLn('', false).repeat(3)); };
+  var trn = function(a, n){ var o = ''; for (var q = 0; q < n; q++) o += numTr(String(a + q), false); return row3(o); };
+  var mod = function(a, n){ var o = ''; for (var q = 0; q < n; q++) o += nLn(String(a + q), false); return row3(o); };
+  if (k < 7) {
+    var a, b, nums = [];
+    if (k < 5) { a = 10 * k + 1; b = a + 9; } else { a = d === 1 ? 1 : d === 2 ? 21 : 36; b = d === 1 ? 20 : d === 2 ? 35 : 50; }
+    for (i = 0; nums.length < 5 && i < 99; i++) { var x = rnd(a + 1, b - 3); if (nums.indexOf(x) < 0) nums.push(x); }
+    nums.sort(function(p, q){ return p - q; });
+    var M = function(f){ return nums.map(f); };
+    if (k < 5) {
+      if (d === 1) {
+        var pr = M(function(n){ var m = n + rnd(1, 3); return r() < .5 ? n + ' , ' + m : m + ' , ' + n; });
+        h = T3(st, 'Trace the numbers ' + a + ' to ' + (a + 4) + '.') + trn(a, 5) + T3(st, 'Trace the numbers ' + (a + 5) + ' to ' + b + '.') + trn(a + 5, 5) +
+          T3(st, 'Write the missing number.') + kRow(M(function(n){ return (n - 1) + ' _ ' + (n + 1); }), 22) + T3(st, 'Circle the bigger number.') + kRow(pr, 22);
+      } else if (d === 2) {
+        h = T3(st, 'Write the number before.') + kRow(M(function(n){ return '_ , ' + n; }), 24) + T3(st, 'Write the number after.') + kRow(M(function(n){ return n + ' , _'; }), 24) +
+          T3(st, 'Write the missing numbers.') + kRow(M(function(n){ return n + ' _ _ ' + (n + 3); }), 20) + T3(st, 'Trace, then write ' + a + '.') + trw(a);
+      } else {
+        h = T3(st, 'Copy the numbers ' + a + ' to ' + (a + 4) + '.') + mod(a, 5) + T3(st, 'Copy the numbers ' + (a + 5) + ' to ' + b + '.') + mod(a + 5, 5) +
+          T3(st, 'Now write ' + a + ' to ' + (a + 4) + ' yourself.') + row3(nLn('', false).repeat(5)) + T3(st, 'Now write ' + (a + 5) + ' to ' + b + ' yourself.') + row3(nLn('', false).repeat(5));
+      }
+    } else if (k === 5) {
+      h = T3(st, 'Write the number before.') + kRow(M(function(n){ return '_ , ' + n; }), 24) + T3(st, 'Write the number after.') + kRow(M(function(n){ return n + ' , _'; }), 24) +
+        T3(st, 'Write the number before and after.') + kRow(M(function(n){ return '_ ' + n + ' _'; }), 24) + T3(st, 'Trace, then write ' + nums[0] + '.') + trw(nums[0]);
+    } else {
+      h = T3(st, 'Write the number in between.') + kRow(M(function(n){ return n + ' _ ' + (n + 2); }), 22) + T3(st, 'Write the missing numbers.') + kRow(M(function(n){ return n + ' _ _ ' + (n + 3); }), 20) +
+        T3(st, 'Write the missing numbers.') + kRow(M(function(n){ return '_ ' + (n + 1) + ' ' + (n + 2) + ' _'; }), 20) + T3(st, 'Trace, then write ' + nums[1] + '.') + trw(nums[1]);
+    }
+  } else if (k < 11) {
+    var sub = k >= 9, mx = (k === 7 || k === 9) ? 5 : 10, it = [], p;
+    for (i = 0; it.length < 5 && i < 99; i++) {
+      var A, B; if (!sub) { A = rnd(1, mx - 1); B = rnd(1, mx - A); } else { A = mx === 5 ? rnd(2, 5) : rnd(6, 10); B = rnd(1, A - 1); }
+      if (!it.some(function(z){ return z[0] === A && z[1] === B; })) it.push([A, B, sub ? A - B : A + B]);
+    }
+    var eq = function(z, bl){ return z[0] + (sub ? ' − ' : ' + ') + z[1] + ' = ' + (bl ? '_' : z[2]); };
+    var drw = function(z){ return T3(st, sub ? 'Draw ' + z[0] + ' circles. Cross out ' + z[1] + '. How many are left?' : 'Draw ' + z[0] + ' circles and ' + z[1] + ' more. How many in all?') + '<div class="mc-draw"></div>'; };
+    if (d === 1) {
+      var rows = it.slice(0, 3).map(function(z){
+        var e1 = EMN[rnd(0, 19)], e2 = EMN[rnd(0, 19)], o = azShuf([z[2], z[2] + 1, z[2] > 1 ? z[2] - 1 : z[2] + 2], r);
+        var pics = sub ? objs(z[0], e1) + '<span style="width:100%;text-align:center;font-size:15px">take away ' + z[1] + '</span>' : objs(z[0], e1) + '<span style="width:100%;text-align:center;font-size:15px">and</span>' + objs(z[1], e2);
+        return '<div class="az-r"><div class="mc-g" style="font-size:20px">' + pics + '</div><div class="az-o">' + o.map(function(v){ return '<span>' + v + '</span>'; }).join('') + '</div></div>';
+      }).join('');
+      h = T3(st, 'Count and circle the answer.') + '<div class="mc-rows">' + rows + '</div>' + T3(st, 'Trace the number sentences.') + kRow(it.slice(0, 3).map(function(z){ return eq(z); }), 17, true) +
+        T3(st, 'Solve.') + kRow(it.slice(0, 4).map(function(z){ return eq(z, 1); }), 17) + drw(it[0]);
+    } else if (d === 2) {
+      h = T3(st, 'Trace the number sentences.') + kRow(it.slice(0, 3).map(function(z){ return eq(z); }), 17, true) + T3(st, 'Solve.') + kRow(it.slice(0, 4).map(function(z){ return eq(z, 1); }), 17) +
+        T3(st, 'Solve.') + kRow(it.slice(1, 5).map(function(z){ return eq(z, 1); }), 17) + drw(it[1]);
+    } else {
+      h = T3(st, 'Solve.') + kRow(it.slice(0, 4).map(function(z){ return eq(z, 1); }), 17) + T3(st, 'Solve.') + kRow(it.slice(1, 5).map(function(z){ return eq(z, 1); }), 17) +
+        T3(st, 'Write your own number sentence.') + row3(nLn('', false).repeat(4)) + drw(it[2]);
+    }
+  } else {
+    var lo = 10 * (k - 11), TN = ['Thirty', 'Forty', 'Fifty'];
+    var wd = function(n){ return n <= 20 ? W_EN[n - 1] : TN[Math.floor(n / 10) - 3] + (n % 10 ? '-' + W_EN[n % 10 - 1] : ''); };
+    var a5 = d === 2 ? lo + 6 : lo + 1, five = [0, 1, 2, 3, 4];
+    if (d === 3) {
+      h = T3(st, 'Write the number name.') + kRow(five.map(function(q){ return (lo + 1 + q) + ' = _'; }), 18) + T3(st, 'Write the number name.') + kRow(five.map(function(q){ return (lo + 6 + q) + ' = _'; }), 18) +
+        T3(st, 'Write the number.') + kRow([wd(lo + 2) + ' =', wd(lo + 4) + ' =', wd(lo + 7) + ' =', wd(lo + 9) + ' ='], 11) + T3(st, 'Write the number names yourself.') + row3(nLn('', false).repeat(5));
+    } else {
+      h = T3(st, 'Trace the numbers ' + a5 + ' to ' + (a5 + 4) + '.') + row3(five.map(function(q){ return numTr(String(a5 + q), false); }).join('')) + T3(st, 'Trace the number names.') + row3(five.map(function(q){ return enWord(wd(a5 + q)); }).join('')) +
+        T3(st, 'Copy the number names.') + row3(five.map(function(q){ return wLn(wd(a5 + q)); }).join('')) + T3(st, 'Now write them yourself.') + row3(nLn('', false).repeat(5));
+    }
+  }
+  return wrap3(cls, false, true, ban + h);
+}
 function school(){
   CURRENT_PROFILE.school_name = $('sch').value.trim();
   CURRENT_PROFILE.cls = $('cls').value.trim();
   try { localStorage.setItem('ws_school', CURRENT_PROFILE.school_name); localStorage.setItem('ws_cls', CURRENT_PROFILE.cls); } catch (e) {}
 }
-function setLang(l){ azLang = l; if (l === 'nur' && !$('cls').value.trim()) $('cls').value = 'نرسری'; render(); }
+function setLang(l){ azLang = l; if (l === 'nur' || l === 'enn' || l === 'mth' || l === 'mtu' || l === 'mtk') { var cc = $('cls').value.trim(); if (!cc || cc === 'نرسری' || cc === 'Nursery' || cc === 'KG' || cc === 'کے جی') $('cls').value = (l === 'mtk' ? 'KG' : (l === 'nur' || l === 'mtu') ? 'نرسری' : 'Nursery'); } render(); }
 function pick(L){ cur[azLang] = L; render(); }
 function fit(force){
   var w = $('prevwrap'), p = $('pv'); if (!w || !p) return;
@@ -278,17 +666,17 @@ function fit(force){
 }
 function render(){
   school();
-  var ur = azLang !== 'en', list = letters(), c = cur[azLang];
-  $('bEn').className = azLang === 'en' ? 'main' : 'ghost'; $('bUr').className = azLang === 'ur' ? 'main' : 'ghost'; $('bNu').className = azLang === 'nur' ? 'main' : 'ghost';
-  var g = $('grid'); g.style.gridTemplateColumns = 'repeat(' + (ur ? 8 : 7) + ',1fr)'; g.style.direction = ur ? 'rtl' : 'ltr';
-  g.innerHTML = list.map(function(L){ return '<button class="' + (L === c ? 'main' : 'ghost') + ' lt" onclick="pick(\'' + L + '\')">' + L + '</button>'; }).join('');
-  $('pr1').textContent = '🖨️ ' + (ur ? 'پرنٹ: ' : 'Print: ') + c + (azLang === 'ur' ? ' (2 صفحے)' : azLang === 'nur' ? ' (1 صفحہ)' : ' (1 page)');
+  var ur = (azLang === 'ur' || azLang === 'nur' || azLang === 'mtu'), math = (azLang === 'mth' || azLang === 'mtu' || azLang === 'mtk'), list = letters(), c = cur[azLang];
+  $('bEn').className = azLang === 'en' ? 'main' : 'ghost'; $('bEnN').className = azLang === 'enn' ? 'main' : 'ghost'; $('bUr').className = azLang === 'ur' ? 'main' : 'ghost'; $('bNu').className = azLang === 'nur' ? 'main' : 'ghost'; $('bMt').className = azLang === 'mth' ? 'main' : 'ghost'; $('bMk').className = azLang === 'mtk' ? 'main' : 'ghost';
+  var g = $('grid'); g.style.gridTemplateColumns = 'repeat(' + (azLang === 'mtk' ? 3 : math ? 5 : ur ? 8 : 7) + ',1fr)'; g.style.direction = ur ? 'rtl' : 'ltr';
+  g.innerHTML = list.map(function(L, k){ return '<button class="' + (L === c ? 'main' : 'ghost') + ' lt" style="border-bottom-color:' + PAL[k % PAL.length][0] + '" onclick="pick(\'' + L + '\')">' + L + '</button>'; }).join('');
+  $('pr1').textContent = '🖨️ ' + (ur ? 'پرنٹ: ' : 'Print: ') + c + (' (3 صفحے / 3 pages)');
   var gs = '';
   for (var i = 0; i < list.length; i += 6) {
     var part = list.slice(i, i + 6);
     gs += '<button class="ghost" onclick="printGroup(' + i + ')">🖨️ ' + part[0] + ' – ' + part[part.length - 1] + '</button>';
   }
-  $('prAll').textContent = ur ? '🖨️ سب ایک ساتھ پرنٹ (' + (list.length * (azLang === 'ur' ? 2 : 1)) + ' صفحات)' : '🖨️ Print all A–Z (' + list.length + ' pages)';
+  $('prAll').textContent = ur ? '🖨️ سب ایک ساتھ پرنٹ (' + (list.length * 3) + ' صفحات)' : (azLang === 'mtk' ? '🖨️ Print all KG Maths (' : math ? '🖨️ Print all 1–20 (' : '🖨️ Print all A–Z (') + (list.length * 3) + ' pages)';
   $('groups').innerHTML = gs; $('groups').style.direction = ur ? 'rtl' : 'ltr';
   $('pv').innerHTML = pages(c, 'az-prev');
   $('sheets').innerHTML = pages(c, 'azpage');   // so the browser menu's own Print also works
